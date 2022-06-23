@@ -1,4 +1,4 @@
-package orientacaoAObjeto;
+package OrientacaoAObjeto;
 
 public class MensagemDoDia {
 	
