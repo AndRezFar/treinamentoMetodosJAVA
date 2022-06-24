@@ -9,12 +9,12 @@ public class OperadoresRacionais {
         int mediaSalaraio = 1200;
         int mediaDependentes = 3;
 
-        int salarioBaixo = 1200;
-        int muitosDependestes = 6;
+        boolean salarioBaixo = salarioMensal < mediaSalaraio;
+        boolean muitosDependestes = quantidadeDependentes >= mediaDependentes;
 
 
 
-        boolean recebeAuxilio = (salarioMensal < mediaSalaraio) && (quantidadeDependentes >= muitosDependestes);
+        boolean recebeAuxilio = (salarioBaixo) && (muitosDependestes);
 
         System.out.println(recebeAuxilio);
 
