@@ -19,6 +19,11 @@ public class ListCollection {
         notas.add(3.6);
         System.out.println(notas.toString());
 
+        LinkedList notas2 = new LinkedList();
+        for(int i =0; i < notas.size(); i++) {
+            notas2.add(notas.get(i));
+        }
+
         System.out.println("ATIVIDADE 2: ");
         System.out.println("Exiba a posicao da nota 5.0: ");
         System.out.println(notas.indexOf(5d));
@@ -93,5 +98,25 @@ public class ListCollection {
         System.out.println("ATIVIDADE 15: ");
         System.out.println("Confira se a lista esta vazia: ");
         System.out.println(notas.isEmpty());
+
+        System.out.println("ATIVIDADE 16: ");
+        System.out.println("Crie uma lista chamada notas 2, e coloque todos os elementos da list arrayslist nessa noca lista: ");
+
+//        LinkedList notas2 = new LinkedList();
+//        for(int i =0; i < notas.size(); i++) {
+//            notas2.add(notas.get(i));
+//        }
+        System.out.println(notas2.toString());
+
+        System.out.println("ATIVIDADE 17: ");
+        System.out.println("Mostre a primeira nota da nova lista sem remove-lo: ");
+        System.out.println(notas2.get(0));
+
+        System.out.println("ATIVIDADE 18: ");
+        System.out.println("Mostre a primeira nota da nova lista removendo-o: ");
+        notas2.remove(0);
+        System.out.println(notas2.get(0));
+
+
     }
 }
